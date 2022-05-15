@@ -1,0 +1,14 @@
+1: New osaka (Status) ====> DONE
+
+2: New spec of blockchain
+
+3: New Ex in tranning team   (Status) ===> In Progess
+   + BEP-20 được tạo ra như một phần mở rộng của ERC-20 và do đó, kế thừa tất cả các tính năng của ERC20.
+   + BEP-20 là tiêu chuẩn mã thông báo chính cho Chuỗi thông minh Binance,
+   + BEP-20 bao gồm khả năng tương thích với mã thông báo BEP-2 ERC-20, hỗ trợ Binance Exchange, các tính năng chức năng tích hợp của tiêu chuẩn BEP-20
+    Binance Smart Chain (BEP20) ví Ethereum (ERC-20) là
+4: Fix bug claim token   (Status) ====> IN PROGESS
+
+5: Fix bug SHIFT NETWORK
+
+6: get fee token(ETH, BNB, SPC)
