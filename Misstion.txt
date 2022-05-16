@@ -1,6 +1,6 @@
 1: New osaka (Status) ====> DONE
 
-2: New spec of blockchain
+2: New spec of blockchain ===> DONE
 
 3: New Ex in tranning team   (Status) ===> In Progess
    + BEP-20 được tạo ra như một phần mở rộng của ERC-20 và do đó, kế thừa tất cả các tính năng của ERC20.
@@ -9,6 +9,11 @@
     Binance Smart Chain (BEP20) ví Ethereum (ERC-20) là
 4: Fix bug claim token   (Status) ====> IN PROGESS
 
-5: Fix bug SHIFT NETWORK
+5: Fix bug SHIFT NETWORK ===> DONE
 
-6: get fee token(ETH, BNB, SPC)
+6: get fee token(ETH, BNB, SPC) ===> DONE
+
+ ====> Sender coin
+ ====> Cliam token
+ ====> Refund token
+ 
