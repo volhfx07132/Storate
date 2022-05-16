@@ -13,7 +13,7 @@ contract Store is ERC20, ERC20Burnable, Ownable{
     address private ADMIN = 0x3Cb06A7709a2511e48a091979b9b68B27999AfaB;
 
     event deposit(address user, uint256 amount_in);
-    event claim(address sender, uint256 token_out);
+    event claim(address sender, address receiver, uint256 token_out);
     event refund(address receiver, uint256 token_out);
 
     struct BuyerInfo{
@@ -42,7 +42,7 @@ contract Store is ERC20, ERC20Burnable, Ownable{
         listBuyerInfor[msg.sender].currentTimeDeposit = block.timestamp;
         listBuyerInfor[msg.sender].currnetTimeClaim = block.timestamp + SPACE_TIME_CLAIM;
         listBuyerInfor[msg.sender].currentTimeRefund = block.timestamp + SPACE_TIME_REFUND;
-        emit deposit(msg.sender, amount_in);
+        emit deposit(ADMIN, msg.sender, amount_in);
     }
 
     function getBuyerInformation() public view returns(BuyerInfo memory){
@@ -52,7 +52,7 @@ contract Store is ERC20, ERC20Burnable, Ownable{
     function claimToken() public {
         require(listBuyerInfor[msg.sender].currnetTimeClaim < block.timestamp, "NOT TIME TO CLIAM TOKEN");
         transferFrom(ADMIN, msg.sender, listBuyerInfor[msg.sender].valueOutput);
-        emit claim(msg.sender, listBuyerInfor[msg.sender].valueOutput);
+        emit claim(ADMIN, msg.sender, listBuyerInfor[msg.sender].valueOutput);
     }
 
     function refundEth() public {
